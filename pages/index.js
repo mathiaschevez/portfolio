@@ -1,9 +1,10 @@
-import { Header } from "../components"
+import { Header, Projects } from "../components"
 
 const Home = () => {
   return (
     <>
       <Header />
+      <Projects />
     </>
   )
 }

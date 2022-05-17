@@ -2,8 +2,8 @@ export const projects = [
   {
     title: 'KRYPT',
     description: "Krypt is a website connected to the blockchain capable of making real transactions on the ethereum network.",
-      image: '/images/kryptWallet-mockup.png',
-      tags: ['React', 'Solidity', ],
+    image: '/images/kryptWallet-mockup.png',
+    tags: ['React', 'Solidity', ],
     source: 'https://kryptowallet.netlify.app/',
     visit: 'https://kryptowallet.netlify.app/',
     id: 0,
