@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    title: 'KRYPT',
+    description: "Krypt is a website connected to the blockchain capable of making real transactions on the ethereum network.",
+      image: '/images/kryptWallet-mockup.png',
+      tags: ['React', 'Solidity', ],
+    source: 'https://kryptowallet.netlify.app/',
+    visit: 'https://kryptowallet.netlify.app/',
+    id: 0,
+  },
+  {
+    title: 'SHARE ME',
+    description:"Share Me is a social media website similar to Pinterest. After signing in with google, the user is able to post their favorite pictures, or browse using specific categories.",
+    image: '/images/soloshareme-mockup.png',
+    tags: ['React', 'Sanity'],
+    source: 'https://soloshareme.netlify.app',
+    visit: 'https://soloshareme.netlify.app',
+    id: 1,
+  },
+  {
+    title: 'SANITY SHOP',
+    description: "Sanity Shop is an ecommerce shop for selling gaming mice. Although the website is in sandbox mode, it is completely capable of making safe credit card transactions with the help of Stripe.",
+    image: '/images/sanity-shop-mockup.png',
+    tags: ['Next JS', 'Sanity', 'Stripe'],
+    source: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
+    visit: 'https://google.com',
+    id: 2,
+  },
+  {
+    title: 'GPT 3',
+    description: "This is a technology website template that was originally designed in figma, and then coded using react. ",
+    image: '/images/gpt3-mockup.png',
+    tags: ['React', 'Figma'],
+    source: 'https://solotechgpt3.netlify.app',
+    visit: 'https://google.com',
+    id: 3,
+  },
+];
