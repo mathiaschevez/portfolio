@@ -3,9 +3,9 @@ import { Navbar, Footer } from '../components'
 
 const Layout = ({ children }) => {
   return (
-    <div className='App'>
+    <div>
       <Navbar />
-        <main>{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )

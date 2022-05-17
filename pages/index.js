@@ -1,9 +1,11 @@
-import { StateContext } from "../context/StateContext"
+import { Header } from "../components"
 
-export default function Home() {
+const Home = () => {
   return (
-    <StateContext>
-      <Component {...pageProps} />
-    </StateContext>
+    <>
+      <Header />
+    </>
   )
 }
+
+export default Home
