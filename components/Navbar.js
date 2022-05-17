@@ -8,7 +8,7 @@ const Navbar = () => {
   const { darkModeActive, setDarkModeActive } = useStateContext()
 
   const styles = {
-    navbar: `${darkModeActive ? 'bg-[#151515]' : 'bg-[#EBEBEB]'} fixed h-screen w-20 flex flex-col justify-between items-center pt-6 pb-9 px-3`,
+    navbar: `${darkModeActive ? 'bg-[#151515] border-[#EBEBEB]' : 'bg-[#EBEBEB] border-[#151515]'} fixed h-screen w-20 flex flex-col justify-between items-center pt-6 pb-9 px-3 border-r`,
     logo: `${darkModeActive ? 'text-[#EBEBEB]' : 'text-[#151515]'} text-xl font-bold`,
     navItems: `flex flex-col items-center gap-6`,
     navItemButton: `${darkModeActive ? 'text-[#EBEBEB]' : 'text-[151515]'} flex flex-col items-center`,
@@ -52,15 +52,13 @@ const Navbar = () => {
             <AiOutlineLinkedin color={darkModeActive ? '#EBEBEB' : '#151515'} size={30} />
           </button>
         </Link>
-        { darkModeActive ? (
-          <button className={styles.theme} onClick={() => setDarkModeActive(false)}>
-            <BsSun color={darkModeActive ? '#EBEBEB' : '#151515'} size={27} />
+          <button className={styles.theme} onClick={() => setDarkModeActive(!darkModeActive)}>
+            { darkModeActive ? (
+              <BsSun color={darkModeActive ? '#EBEBEB' : '#151515'} size={27} />
+            ) : (
+              <BsMoon color={darkModeActive ? '#EBEBEB' : '#151515'} size={24} />
+            )}
           </button>
-        ) : (
-          <button className={styles.theme} onClick={() => setDarkModeActive(true)}>
-            <BsMoon color={darkModeActive ? '#EBEBEB' : '#151515'} size={24} />
-          </button>
-        )}
       </div>
     </div>
   )
