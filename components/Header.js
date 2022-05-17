@@ -6,7 +6,7 @@ const Header = () => {
 
   const styles = {
     header: `${darkModeActive ? 'bg-[#151515]' : 'bg-[#EBEBEB]' } pl-40 h-screen flex flex-col justify-center gap-6`,
-    title: `text-7xl font-bold`,
+    title: `gradient-animation text-7xl font-bold`,
     subtitle: `${darkModeActive ? 'text-[#EBEBEB]' : 'text-[#151515]'} text-xl font-bold`,
     actions: `flex gap-9`,
     button: `${darkModeActive ? 'bg-[#EBEBEB] text-[#151515]' : 'bg-[#151515] text-[#EBEBEB]'} font-bold px-3 py-3 rounded`

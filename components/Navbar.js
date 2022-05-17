@@ -42,16 +42,16 @@ const Navbar = () => {
         </Link>
       </div>
       <div className={styles.navFooter}>
-        <Link href='/'>
+        <a target='_blank' href='https://github.com/mathiaschevez'>
           <button>
             <AiFillGithub color={darkModeActive ? '#EBEBEB' : '#151515'} size={30}/>
           </button>
-        </Link>
-        <Link href='/'>
+        </a>
+        <a target='_blank' href='https://www.linkedin.com/in/mathias-chevez-21430b214/'>
           <button>
             <AiOutlineLinkedin color={darkModeActive ? '#EBEBEB' : '#151515'} size={30} />
           </button>
-        </Link>
+        </a>
           <button className={styles.theme} onClick={() => setDarkModeActive(!darkModeActive)}>
             { darkModeActive ? (
               <BsSun color={darkModeActive ? '#EBEBEB' : '#151515'} size={27} />
