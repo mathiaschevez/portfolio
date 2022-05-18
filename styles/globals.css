@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .gradient-animation {
-  background: linear-gradient(to left, #846dda 20%, rgb(104, 90, 231) 40%, #1e96fc 60%, #856dda 80%);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(59,94,255,1) 50%, rgba(0,212,255,1) 100%);
   background-size: 200% auto;
 
   background-clip: text;

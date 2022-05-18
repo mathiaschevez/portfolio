@@ -1,9 +1,9 @@
 export const projects = [
   {
     title: 'KRYPT',
-    description: "Krypt is a website connected to the blockchain capable of making real transactions on the ethereum network.",
+    description: 'Krypt is a website connected to the blockchain capable of making real transactions on the ethereum network. The transaction is made possible with the help of MetaMask and HardHat',
     image: '/images/kryptWallet-mockup.png',
-    tags: ['React', 'Solidity', ],
+    tags: ['React', 'Solidity'],
     source: 'https://kryptowallet.netlify.app/',
     visit: 'https://kryptowallet.netlify.app/',
     id: 0,
@@ -23,16 +23,16 @@ export const projects = [
     image: '/images/sanity-shop-mockup.png',
     tags: ['Next JS', 'Sanity', 'Stripe'],
     source: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
-    visit: 'https://google.com',
+    visit: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
     id: 2,
   },
   {
     title: 'GPT 3',
-    description: "This is a technology website template that was originally designed in figma, and then coded using react. ",
+    description: "This is a technology website template that was originally designed in figma, and then developed using react.",
     image: '/images/gpt3-mockup.png',
     tags: ['React', 'Figma'],
     source: 'https://solotechgpt3.netlify.app',
-    visit: 'https://google.com',
+    visit: 'https://solotechgpt3.netlify.app',
     id: 3,
   },
 ];

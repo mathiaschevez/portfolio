@@ -1,9 +1,12 @@
 import React, { createContext, useState, useEffect, useContext } from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 const Context = createContext()
 
 export const StateContext = ({ children }) => {
   const [darkModeActive, setDarkModeActive] = useState(false)
+  const isMobile = useMediaQuery({ query: '(max-width: 770px)' })
+  const isPhone = useMediaQuery({ query: '(max-width: 670px)' })
 
   useEffect(() => {
     window.matchMedia('(prefers-color-scheme: dark)').matches && setDarkModeActive(true)
@@ -22,7 +25,9 @@ export const StateContext = ({ children }) => {
     <Context.Provider
       value={{
         darkModeActive,
-        setDarkModeActive
+        setDarkModeActive,
+        isPhone,
+        isMobile
       }}
     >
       {children}

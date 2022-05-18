@@ -1,17 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStateContext } from '../context/StateContext'
+import { ImCross } from 'react-icons/im'
 
 const Footer = () => {
-  const { darkModeActive } = useStateContext()
+  const [showMessage, setShowMessage] = useState(false)
+  const { darkModeActive, isMobile, isPhone } = useStateContext()
 
   const styles = {
-    footer: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB] border-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515] border-[#151515]'} flex justify-center items-center h-20 border-t`
+    footer: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB] border-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515] border-[#151515]'} ${isMobile ? 'pl-20' : 'pl-40'} ${isPhone ? 'pl-10 flex flex-col gap-3' : undefined} flex justify-between pr-20 py-9 border-t`,
+    footerDetail: `${isPhone ? 'flex-col items-start' : 'gap-6'} flex`,
+    footerTitle: `${isMobile ? 'text-xl' : 'text-2xl'} font-bold`,
+    footerButton: `${isMobile ? undefined : 'text-xl'} hover:underline`,
+    footerAlert: `${showMessage ? 'flex' : 'hidden'} ${isPhone ? 'w-full py-2' : 'w-1/3'} bg-[#1e96fc] justify-around items-center rounded font-bold`,
+  }
+
+  const handleCopy = (value) => {
+    console.log(value)
+    setShowMessage(true)
+
+    navigator.clipboard.writeText(value)
   }
 
   return (
     <div className={styles.footer}>
-      Footer
-    </div>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerDetail}>
+          <h1 className={styles.footerTitle}>Email: </h1>
+          <button className={styles.footerButton} onClick={() => handleCopy('mathiaschevez10@gmail.com')}>mathiaschevez10@gmail.com</button>
+        </div>
+        <div className={styles.footerDetail}>
+          <h1 className={styles.footerTitle}>Phone: </h1>
+          <button className={styles.footerButton} onClick={() => handleCopy('(435) - 602 - 2603')}>(435) - 602 - 2603</button>
+        </div>
+      </div>
+      <div className={styles.footerAlert}>
+        <h1>Copied!</h1>
+        <button><ImCross onClick={() => setShowMessage(false)}/></button>
+      </div>
+    </div> 
   )
 }
 

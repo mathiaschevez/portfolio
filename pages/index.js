@@ -1,10 +1,12 @@
-import { Header, Projects } from "../components"
+import { Contact, Header, Projects, Skills } from "../components"
 
 const Home = () => {
   return (
     <>
       <Header />
       <Projects />
+      <Skills />
+      <Contact />
     </>
   )
 }
