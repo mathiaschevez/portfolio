@@ -5,20 +5,8 @@ const Context = createContext()
 
 export const StateContext = ({ children }) => {
   const [darkModeActive, setDarkModeActive] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
-  const [isPhone, setIsPhone] = useState(false)
-
-  useEffect(() => {
-    if(useMediaQuery({ query: '(max-width: 770px)' })) {
-      setIsMobile(true)
-      setIsPhone(false)
-    }
-    if(useMediaQuery({ query: '(max-width: 670px)' })) {
-      setIsMobile(false)
-      setIsPhone(true)
-    }
-  }, [])
-  
+  const isMobile = useMediaQuery({ query: '(max-width: 770px)' })
+  const isPhone = useMediaQuery({ query: '(max-width: 670px)' })
 
   useEffect(() => {
     window.matchMedia('(prefers-color-scheme: dark)').matches && setDarkModeActive(true)
