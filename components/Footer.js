@@ -7,8 +7,8 @@ const Footer = () => {
   const { darkModeActive, isMobile, isPhone } = useStateContext()
 
   const styles = {
-    footer: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB] border-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515] border-[#151515]'} mobileFooter phoneFooter flex justify-between pr-20 py-9 border-t`,
-    footerDetail: `phoneDetail mobileDetail flex`,
+    footer: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB] border-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515] border-[#151515]'} mobileFooter phoneFooter flex justify-between pl-40 pr-20 py-9 border-t`,
+    footerDetail: `phoneDetail mobileDetail flex gap-3`,
     footerTitle: `mobileTitle text-2xl font-bold`,
     footerButton: `mobileButton hover:underline`,
     footerAlert: `${showMessage ? 'flex' : 'hidden'} phoneAlert w-1/3 bg-[#1e96fc] justify-around items-center rounded font-bold`,

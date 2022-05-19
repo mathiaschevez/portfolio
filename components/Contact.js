@@ -12,7 +12,7 @@ const Contact = () => {
   const form = useRef()
 
   const styles = {
-    contact: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} mobileContact phoneContact flex items-center h-screen`,
+    contact: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} mobileContact phoneContact flex items-center h-screen pl-40`,
     form: `phoneForm w-2/3 flex flex-col gap-6`,
     formInfo: `phoneInfo flex justify-between`,
     formMessage: `flex justify-between`,
