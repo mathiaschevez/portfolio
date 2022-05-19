@@ -106,10 +106,11 @@ html {
 @media screen and (max-width: 670px) {
   .phoneContact {
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .phoneForm {
-    width: 75%;
+    width: 100%;
   }
 
   .phoneInfo {
@@ -179,4 +180,24 @@ html {
     padding: 3px;
     margin-top: 9px;
   }
+}
+
+/* PHONE DETAIL RESPONSIVENESS */
+
+@media screen and (max-width: 770px) {
+  .mobileProject {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 66px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+  }
+
+  .mobileProjectButton {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+
 }

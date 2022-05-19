@@ -12,21 +12,21 @@ const ProjectDetail = () => {
   const currentProject = projects[id]
 
   const styles = {
-    project: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} pl-40 h-screen flex items-center gap-9 pr-20`,
+    project: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} mobileProject pl-40 h-screen flex items-center gap-9 pr-20`,
     projectImage: `w-1/2 h-1/2`,
     projectDetails: `flex flex-col gap-12`,
     projectTitle: `text-6xl`,
     projectActions: `flex gap-9`,
-    projectButton: `${darkModeActive ? 'bg-[#EBEBEB] text-[#151515] hover:bg-[#D3D5D9]' : 'bg-[#151515] text-[#EBEBEB] hover:bg-[#333]'} w-1/3 py-2 rounded flex items-center justify-center z-20 font-bold hover:cursor-pointer`
+    projectButton: `${darkModeActive ? 'bg-[#EBEBEB] text-[#151515] hover:bg-[#D3D5D9]' : 'bg-[#151515] text-[#EBEBEB] hover:bg-[#333]'} mobileProjectButton w-1/3 py-2 rounded flex items-center justify-center z-20 font-bold hover:cursor-pointer`
   }
 
   return (
     <div className={styles.project}>
       <Image 
+        src={currentProject?.image} 
         className={styles.projectImage}
         width='1000'
         height='600'
-        src={currentProject?.image} 
         alt='krypt'
       />
       <div className={styles.projectDetails}>
