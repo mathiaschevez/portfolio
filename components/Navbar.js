@@ -8,12 +8,12 @@ const Navbar = () => {
   const { darkModeActive, setDarkModeActive, isMobile } = useStateContext()
 
   const styles = {
-    navbar: `${darkModeActive ? 'bg-[#151515] border-[#EBEBEB]' : 'bg-[#EBEBEB] border-[#151515]'} ${isMobile ? 'w-screen h-20': 'h-screen w-20 flex-col border-r'} fixed flex justify-between items-center pt-6 pb-9 px-3 z-50`,
+    navbar: `${darkModeActive ? 'bg-[#151515] border-[#EBEBEB]' : 'bg-[#EBEBEB] border-[#151515]'} mobileNav h-screen w-20 flex-col border-r fixed flex justify-between items-center pt-9 pb-9 px-3 z-50`,
     logo: `${darkModeActive ? 'text-[#EBEBEB]' : 'text-[#151515]'} text-xl font-bold`,
-    navItems: `${isMobile ? 'flex-row' : 'flex-col'} flex items-center gap-6`,
+    navItems: `mobileRow flex flex-col items-center gap-6`,
     navItemButton: `${darkModeActive ? 'text-[#EBEBEB]' : 'text-[151515]'} flex flex-col items-center justify-center`,
-    navFooter: `${isMobile ? 'flex-row' : 'flex-col'} flex gap-3 items-center`,
-    theme: ``,
+    navFooter: `mobileRow flex flex-col gap-3 items-center`,
+    theme: `phoneDisplayNone`,
   }
 
   return (
@@ -25,19 +25,19 @@ const Navbar = () => {
         <Link href='/#projects'>
           <button className={styles.navItemButton}>
             <AiOutlineFolderOpen color={darkModeActive ? '#EBEBEB' : '#151515'} size={27} />
-            <h1>Projects</h1>
+            <h1 className='phoneDisplayNone'>Projects</h1>
           </button>
         </Link>
         <Link href='/#skills'>
           <button className={styles.navItemButton}>
             <BsCardChecklist color={darkModeActive ? '#EBEBEB' : '#151515'} size={27} />
-            <h1>Skills</h1>
+            <h1 className='phoneDisplayNone'>Skills</h1>
           </button>
         </Link>
         <Link href='/#contact'>
           <button className={styles.navItemButton}>
             <AiOutlineMessage color={darkModeActive ? '#EBEBEB' : '#151515'} size={27} />
-            <h1>Contact</h1>
+            <h1 className='phoneDisplayNone'>Contact</h1>
           </button>
         </Link>
       </div>

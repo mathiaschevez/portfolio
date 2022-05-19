@@ -12,15 +12,15 @@ const Contact = () => {
   const form = useRef()
 
   const styles = {
-    contact: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} ${isMobile ? 'pl-20' : 'pl-40'} ${isPhone ? 'pl-10' : undefined} flex items-center h-screen`,
-    form: `${isPhone ? 'w-4/5' : 'w-2/3'} flex flex-col gap-6`,
-    formInfo: `${isPhone ? 'flex-col' : undefined} flex justify-between`,
+    contact: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} mobileContact phoneContact flex items-center h-screen`,
+    form: `phoneForm w-2/3 flex flex-col gap-6`,
+    formInfo: `phoneInfo flex justify-between`,
     formMessage: `flex justify-between`,
     formAlert: `${showMessage ? 'flex' : 'hidden'} bg-[#1e96fc] justify-around items-center w-full rounded py-3 font-bold`,
-    label: `${isPhone ? 'text-2xl' : 'text-4xl'} text-4xl font-bold`,
-    input: `${isPhone ? 'w-full' : 'w-1/2'} rounded focus:outline-none px-2 py-3 text-[#151515] border focus:border-[#1e96fc] font-bold`,
-    textArea: `${isPhone ? 'w-full' : 'w-1/2'} rounded focus:outline-none px-2 h-32 py-3 resize-none text-[#151515] border focus:border-[#1e96fc] font-bold`,
-    formButton: `${darkModeActive ? 'bg-[#EBEBEB] text-[#151515] hover:bg-[#D3D5D9]' : 'bg-[#151515] text-[#EBEBEB] hover:bg-[#333]'} ${isMobile ? 'w-full' : 'w-1/2'} rounded mt-6 py-3 flex justify-center self-end hover:cursor-pointer font-bold`,
+    label: `phoneLabel text-4xl font-bold`,
+    input: `phoneInput w-1/2 rounded focus:outline-none px-2 py-3 text-[#151515] border focus:border-[#1e96fc] font-bold`,
+    textArea: `phoneTextarea w-1/2 rounded focus:outline-none px-2 h-32 py-3 resize-none text-[#151515] border focus:border-[#1e96fc] font-bold`,
+    formButton: `${darkModeActive ? 'bg-[#EBEBEB] text-[#151515] hover:bg-[#D3D5D9]' : 'bg-[#151515] text-[#EBEBEB] hover:bg-[#333]'} mobileButton w-1/2 rounded mt-6 py-3 flex justify-center self-end hover:cursor-pointer font-bold`,
   }
 
   const sendEmail = (e) => {

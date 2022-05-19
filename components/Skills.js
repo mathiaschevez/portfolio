@@ -17,8 +17,8 @@ const Skills = () => {
   const sanity = '/images/sanity.png'
 
   const styles = {
-    skills: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} ${isMobile ? 'pl-20 grid pr-20 py-3' : 'pl-40 justify-center flex flex-col gap-32'} ${isPhone ? 'grid-cols-1' : 'grid-cols-2'} h-screen gap-6`,
-    skill: `${isMobile ? 'flex-col gap-3' : 'gap-6'} flex items-center gap-6`,
+    skills: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515]'} mobileSkills phoneSkills pl-40 justify-center flex flex-col gap-32 h-screen gap-6`,
+    skill: `mobileSkill gap-6 flex items-center`,
     title: `text-4xl font-bold border-r pr-9`,
     icons: `flex gap-6 items-center`,
     image: `w-20 h-20`

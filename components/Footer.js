@@ -7,11 +7,11 @@ const Footer = () => {
   const { darkModeActive, isMobile, isPhone } = useStateContext()
 
   const styles = {
-    footer: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB] border-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515] border-[#151515]'} ${isMobile ? 'pl-20' : 'pl-40'} ${isPhone ? 'pl-10 flex flex-col gap-3' : undefined} flex justify-between pr-20 py-9 border-t`,
-    footerDetail: `${isPhone ? 'flex-col items-start' : 'gap-6'} flex`,
-    footerTitle: `${isMobile ? 'text-xl' : 'text-2xl'} font-bold`,
-    footerButton: `${isMobile ? undefined : 'text-xl'} hover:underline`,
-    footerAlert: `${showMessage ? 'flex' : 'hidden'} ${isPhone ? 'w-full py-2' : 'w-1/3'} bg-[#1e96fc] justify-around items-center rounded font-bold`,
+    footer: `${darkModeActive ? 'bg-[#151515] text-[#EBEBEB] border-[#EBEBEB]' : 'bg-[#EBEBEB] text-[#151515] border-[#151515]'} mobileFooter phoneFooter flex justify-between pr-20 py-9 border-t`,
+    footerDetail: `phoneDetail mobileDetail flex`,
+    footerTitle: `mobileTitle text-2xl font-bold`,
+    footerButton: `mobileButton hover:underline`,
+    footerAlert: `${showMessage ? 'flex' : 'hidden'} phoneAlert w-1/3 bg-[#1e96fc] justify-around items-center rounded font-bold`,
   }
 
   const handleCopy = (value) => {

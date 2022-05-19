@@ -5,8 +5,8 @@ const Header = () => {
   const { darkModeActive, isMobile, isPhone } = useStateContext()
 
   const styles = {
-    header: `${darkModeActive ? 'bg-[#151515]' : 'bg-[#EBEBEB]' } ${isMobile ? 'pl-20' : 'pl-40'} ${isPhone ? 'pl-10' : undefined} h-screen flex flex-col justify-center gap-6`,
-    title: `${isPhone ? 'text-5xl' : 'text-7xl'} gradient-animation font-bold`,
+    header: `${darkModeActive ? 'bg-[#151515]' : 'bg-[#EBEBEB]' } pl-40 h-screen flex flex-col justify-center gap-6 mobileHeader phoneHeader`,
+    title: `${isPhone ? 'text-5xl' : 'text-7xl'} gradient-animation font-bold mobileHeaderText phoneHeaderText`,
     subtitle: `${darkModeActive ? 'text-[#EBEBEB]' : 'text-[#151515]'} text-xl font-bold`,
     actions: `flex gap-9`,
     button: `${darkModeActive ? 'bg-[#EBEBEB] text-[#151515] hover:bg-[#D3D5D9]' : 'bg-[#151515] text-[#EBEBEB] hover:bg-[#333]'} font-bold px-3 py-3 rounded hover:cursor-pointer`
