@@ -18,13 +18,22 @@ export const projects = [
     id: 1,
   },
   {
+    title: 'SOLO SHOP',
+    description: 'Solo Shop is an ecommerce shop for selling hoodie. It was built with NextJS and Tailwind CSS for styling. The website will go live soon and make transactions using Stripe.',
+    image: '/images/hoodieShopMockup.png',
+    tags: ['Next JS', 'Sanity', 'Stripe'],
+    source: 'https://soloshop.vercel.app',
+    visit: 'https://soloshop.vercel.app',
+    id: 2,
+  },
+  {
     title: 'SANITY SHOP',
-    description: "Sanity Shop is an ecommerce shop for selling gaming mice. Although the website is in sandbox mode, it is completely capable of making safe credit card transactions with the help of Stripe.",
+    description: "Sanity Shop is another ecommerce shop for selling gaming mice. Although the website is in sandbox mode, it is completely capable of making safe credit card transactions with the help of Stripe.",
     image: '/images/sanity-shop-mockup.png',
     tags: ['Next JS', 'Sanity', 'Stripe'],
     source: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
     visit: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
-    id: 2,
+    id: 3,
   },
   {
     title: 'GPT 3',
@@ -33,6 +42,6 @@ export const projects = [
     tags: ['React', 'Figma'],
     source: 'https://solotechgpt3.netlify.app',
     visit: 'https://solotechgpt3.netlify.app',
-    id: 3,
+    id: 4,
   },
 ];
