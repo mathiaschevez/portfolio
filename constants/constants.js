@@ -27,21 +27,12 @@ export const projects = [
     id: 2,
   },
   {
-    title: 'SANITY SHOP',
-    description: "Sanity Shop is another ecommerce shop for selling gaming mice. Although the website is in sandbox mode, it is completely capable of making safe credit card transactions with the help of Stripe.",
-    image: '/images/sanity-shop-mockup.png',
-    tags: ['Next JS', 'Sanity', 'Stripe'],
-    source: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
-    visit: 'https://sanity-mouse-shop-5d5shlppq-mathiaschevez.vercel.app/',
-    id: 3,
-  },
-  {
     title: 'GPT 3',
     description: "This is a technology website template that was originally designed in figma, and then developed using react.",
     image: '/images/gpt3-mockup.png',
     tags: ['React', 'Figma'],
     source: 'https://solotechgpt3.netlify.app',
     visit: 'https://solotechgpt3.netlify.app',
-    id: 4,
+    id: 3,
   },
 ];
