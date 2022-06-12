@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'SOLO SHOP',
-    description: 'Solo Shop is an ecommerce shop for selling hoodie. It was built with NextJS and Tailwind CSS for styling. The website will go live soon and make transactions using Stripe.',
+    description: 'Solo Shop is an ecommerce shop for selling hoodies. It was built with NextJS and Tailwind CSS for styling. The website will go live soon and make transactions using Stripe.',
     image: '/images/hoodieShopMockup.png',
     tags: ['Next JS', 'Sanity', 'Stripe'],
     source: 'https://soloshop.vercel.app',
