@@ -1,12 +1,21 @@
 export const projects = [
   {
+    title: 'Work 2 Play Rentals',
+    description: "Work 2 Play is a jetski rental site built for a business located in Clinton, UT. This site is built with NextJS and Tailwind CSS for styling.",
+    image: '/images/work2play-mockup.png',
+    tags: ['Next JS', 'Tailwind CSS', 'Sanity'],
+    source: 'https://work2playutah.com',
+    visit: 'https://work2playutah.com',
+    id: 0,
+  },
+  {
     title: 'KRYPT',
     description: 'Krypt is a website connected to the blockchain capable of making real transactions on the ethereum network. The transaction is made possible with the help of MetaMask and HardHat',
     image: '/images/kryptWallet-mockup.png',
     tags: ['React', 'Solidity'],
     source: 'https://kryptowallet.netlify.app/',
     visit: 'https://kryptowallet.netlify.app/',
-    id: 0,
+    id: 1,
   },
   {
     title: 'SHARE ME',
@@ -15,7 +24,7 @@ export const projects = [
     tags: ['React', 'Sanity'],
     source: 'https://soloshareme.netlify.app',
     visit: 'https://soloshareme.netlify.app',
-    id: 1,
+    id: 2,
   },
   {
     title: 'SOLO SHOP',
@@ -24,15 +33,6 @@ export const projects = [
     tags: ['Next JS', 'Sanity', 'Stripe'],
     source: 'https://soloshop.vercel.app',
     visit: 'https://soloshop.vercel.app',
-    id: 2,
-  },
-  {
-    title: 'GPT 3',
-    description: "This is a technology website template that was originally designed in figma, and then developed using react.",
-    image: '/images/gpt3-mockup.png',
-    tags: ['React', 'Figma'],
-    source: 'https://solotechgpt3.netlify.app',
-    visit: 'https://solotechgpt3.netlify.app',
     id: 3,
   },
 ];

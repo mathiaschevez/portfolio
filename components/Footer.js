@@ -34,8 +34,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerAlert}>
-        <h1>Copied!</h1>
-        <button><ImCross onClick={() => setShowMessage(false)}/></button>
+        <h1 className='text-white'>Copied!</h1>
+        <button className='text-white'><ImCross onClick={() => setShowMessage(false)}/></button>
       </div>
     </div> 
   )
