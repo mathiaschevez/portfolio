@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'Hitplay',
+    title: 'HITPLAY',
     description: "Hitplay is an app that allows users to vote between two tracks from Spotify's 'Top 100 Most Streamed' playlist. It also allows users to listen to a preview of each track.",
     image: '/images/hitplaymockup.png',
     tags: ['Next JS', 'Prisma', 'Tailwind CSS'],
