@@ -182,7 +182,7 @@ html {
   }
 }
 
-/* PHONE DETAIL RESPONSIVENESS */
+/* PROJECT DETAIL RESPONSIVENESS */
 
 @media screen and (max-width: 770px) {
   .mobileProject {
@@ -201,3 +201,5 @@ html {
 @media screen and (max-width: 670px) {
 
 }
+
+/* ARTICLE DETAIL RESPONSIVENESS */

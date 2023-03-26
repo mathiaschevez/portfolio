@@ -1,6 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { projects } from '../constants/constants'
+import { projects } from '../constants/projects'
 import Project from './Project'
 import { useStateContext } from '../context/StateContext'
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { projects } from '../../constants/constants'
+import { projects } from '../../constants/projects'
 import { useRouter } from 'next/router'
 import { useStateContext } from '../../context/StateContext'
 import Link from 'next/link'
@@ -21,27 +21,35 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className={styles.project}>
-      <Image 
-        src={currentProject?.image} 
-        className={styles.projectImage}
-        width='1000'
-        height='600'
-        alt='krypt'
-      />
-      <div className={styles.projectDetails}>
-        <h1 className={styles.projectTitle}>{currentProject?.title}</h1>
-        <h1>{currentProject?.description}</h1>
-        <div className={styles.projectActions}>
-          <a target='_blank' rel='noreferrer' href={currentProject?.visit} className={styles.projectButton}>VISIT</a>
-          <Link href='/#projects'>
-            <button className={styles.projectButton}>
-              BACK TO PROJECTS
-            </button>
-          </Link>
+    <>
+      {currentProject ? 
+        <div className={styles.project}>
+          <Image 
+            src={currentProject?.image} 
+            className={styles.projectImage}
+            width='1000'
+            height='600'
+            alt='krypt'
+          />
+          <div className={styles.projectDetails}>
+            <h1 className={styles.projectTitle}>{currentProject?.title}</h1>
+            <h1>{currentProject?.description}</h1>
+            <div className={styles.projectActions}>
+              <a target='_blank' rel='noreferrer' href={currentProject?.visit} className={styles.projectButton}>VISIT</a>
+              <Link href='/#projects'>
+                <button className={styles.projectButton}>
+                  BACK TO PROJECTS
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+        : 
+        <div className={styles.project}>
+          <h1>Loading</h1>
+        </div>
+      }
+    </>
   )
 }
 
