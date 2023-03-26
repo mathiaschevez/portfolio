@@ -7,7 +7,7 @@ const Home = () => {
       <Blog />
       <Projects />
       <Skills />
-      <Contact />
+      {/* <Contact /> */}
     </>
   )
 }

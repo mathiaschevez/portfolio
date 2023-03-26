@@ -41,7 +41,7 @@ const Navbar = () => {
           </button>
         </Link>
       </div>
-      <div className={styles.navFooter}>
+      <div href='/#contact' className={styles.navFooter}>
         <a target='_blank' rel='noreferrer' href='https://github.com/mathiaschevez'>
           <button className={styles.navItemButton}>
             <AiFillGithub color={darkModeActive ? '#EBEBEB' : '#151515'} size={30}/>
